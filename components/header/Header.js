@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import s from "./Header.module.css";
 import PropTypes from "prop-types";
+import Link from "next/link";
 
 const Header = () => {
   const [menu, setMenu] = useState(false);
@@ -8,7 +9,11 @@ const Header = () => {
   return (
     <header className={s.HeaderContainer}>
       <div className={s.CenterContent}>
-        <h2>jayne mulligan</h2>
+        <Link href={"/"}>
+          <a>
+            <h2>jayne mulligan</h2>
+          </a>
+        </Link>
         <div className={s.MenuContainer}>
           <div className={s.MenuLine}></div>
           <div className={s.MenuLine}></div>
