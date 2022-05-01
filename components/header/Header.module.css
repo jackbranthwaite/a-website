@@ -1,7 +1,10 @@
 .HeaderContainer {
-  width: 100%;
   display: flex;
   justify-content: center;
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .CenterContent {

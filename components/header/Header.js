@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <header className={s.HeaderContainer}>
       <div className={s.CenterContent}>
-        <h3>jayne mulligan</h3>
+        <h2>jayne mulligan</h2>
         <div className={s.MenuContainer}>
           <div className={s.MenuLine}></div>
           <div className={s.MenuLine}></div>
@@ -16,8 +16,12 @@ const Header = () => {
         </div>
         <div className={s.MenuOpen}>
           <ul className={s.MenuList}>
-            <li>photography</li>
-            <li>writing</li>
+            <div className={s.ListItemWrapper}>
+              <li className={s.ListItem}>photography</li>
+            </div>
+            <div className={s.ListItemWrapper}>
+              <li className={s.ListItem}>writing</li>
+            </div>
           </ul>
         </div>
       </div>
