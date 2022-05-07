@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }) {
       )}
     >
       <PrismicPreview repositoryName={repositoryName}>
-        {/* <Header /> */}
+        <Header />
         <Component {...pageProps} />
       </PrismicPreview>
     </PrismicProvider>
