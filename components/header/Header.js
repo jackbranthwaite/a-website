@@ -8,12 +8,12 @@ const Header = () => {
 
   return (
     <header className={s.HeaderContainer}>
-      <div className={s.CenterContent}>
-        <Link href={"/"}>
-          <a>
-            <h2>jayne mulligan</h2>
-          </a>
-        </Link>
+      <Link href={"/"}>
+        <a className={s.TitleWrapper}>
+          <h2 className={s.Title}>jayne mulligan</h2>
+        </a>
+      </Link>
+      <div className={s.Menu}>
         <div className={s.MenuContainer}>
           <div className={s.MenuLine}></div>
           <div className={s.MenuLine}></div>

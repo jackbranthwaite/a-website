@@ -21,7 +21,9 @@ const HomepageCard = ({ title }) => {
               }
         }
       >
-        <h2 className={s.HomepageCardTitle}>{title}</h2>
+        <div className={s.HomepageCardTitleWrapper}>
+          <h2 className={s.HomepageCardTitle}>{title}</h2>
+        </div>
       </a>
     </Link>
   );

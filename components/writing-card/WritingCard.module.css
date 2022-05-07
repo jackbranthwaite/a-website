@@ -1,8 +1,16 @@
 .WritingCardContainer {
-  width: 20vw;
+  width: 100%;
   padding: 20px;
   background-color: #ffac70;
-  max-height: 200px;
+  overflow: hidden;
+  border-top: 1px solid #ffbf91;
+  cursor: pointer;
+}
+
+.WritingCardDescription {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
   overflow: hidden;
 }
 

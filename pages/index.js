@@ -5,7 +5,6 @@ import s from "../styles/Homepage.module.css";
 const Homepage = () => {
   return (
     <div className={s.Homepage}>
-      <Header />
       <div className={s.HomepageContentContainer}>
         <HomepageCard title="writing" />
         <HomepageCard title="photography" />
