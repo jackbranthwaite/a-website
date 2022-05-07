@@ -2,6 +2,8 @@
   width: 20vw;
   padding: 20px;
   background-color: #ffac70;
+  max-height: 200px;
+  overflow: hidden;
 }
 
 .WritingCardTitle {
