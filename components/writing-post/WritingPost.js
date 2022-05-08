@@ -9,7 +9,7 @@ const WritingPost = ({ content }) => {
   const router = useRouter();
 
   const navigate = () => {
-    router.push(`/router/${content.id}`);
+    router.push(`/router/${content.uid}`);
   };
 
   return (
@@ -17,7 +17,7 @@ const WritingPost = ({ content }) => {
       <h2 className={s.PostTitle}>{content.data.title[0].text}</h2>
       <div className={s.PostAuthorButton}>
         <p className={s.PostDate}>{date}</p>
-        <Link href={`/reader/${content.id}`}>
+        <Link href={`/writing/${content.uid}`}>
           <a
             className={s.NavigateButton}
             target="_blank"

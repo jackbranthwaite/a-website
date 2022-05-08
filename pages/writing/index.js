@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import WritingCard from "../components/writing-card/WritingCard";
-import s from "../styles/Writing.module.css";
+import WritingCard from "../../components/writing-card/WritingCard";
+import s from "../../styles/Writing.module.css";
 
-import { createClient } from "../prismicio";
-import WritingPost from "../components/writing-post/WritingPost";
+import { createClient } from "../../prismicio";
+import WritingPost from "../../components/writing-post/WritingPost";
 
 const Writing = () => {
   const client = createClient();

@@ -4,19 +4,13 @@
 
 .WritingTitleContainer {
   background-color: #ffac70;
-  width: 35%;
-  transition: 0.5s ease-in-out;
-}
-
-.WritingTitleContainer:hover {
-  width: 62%;
 }
 
 .WritingLeftContainer {
   width: 30vw;
-  padding-top: 6rem;
-  margin-left: 1rem;
-  height: 100vh;
+  margin-top: 10vh;
+  margin-left: 5%;
+  height: 90vh;
   overflow-y: scroll;
 }
 

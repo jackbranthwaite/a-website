@@ -1,0 +1,27 @@
+.PhotographyContainer {
+  display: flex;
+}
+
+.PhotographyTitleContainer {
+  background-color: #ffac70;
+}
+
+.PhotographyLeft {
+  width: 30vw;
+  margin-top: 10vh;
+  margin-left: 5%;
+  height: 90vh;
+  overflow-y: scroll;
+}
+
+.PhotographyRight {
+  width: 70vw;
+  height: 100vh;
+  background-color: #fff;
+  overflow-y: scroll;
+}
+
+.PhotographyTitle {
+  padding: 10px;
+  margin: 0;
+}

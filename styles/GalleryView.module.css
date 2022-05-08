@@ -1,0 +1,25 @@
+.PhotoContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.PhotoWrapper {
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vh;
+}
+
+.GalleryContainer {
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Image {
+  width: 100%;
+  height: auto;
+}

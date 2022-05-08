@@ -24,14 +24,9 @@
 .MenuList {
   text-align: right;
   margin-top: 1em;
+  display: flex;
+  flex-direction: column;
 }
 .Title {
   margin: 0;
 }
-
-/* .Title {
-  padding: 0 5px;
-  margin: 0;
-  background-color: #ffac70;
-  padding-right: 30px;
-} */

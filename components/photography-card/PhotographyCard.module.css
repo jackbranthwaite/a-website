@@ -1,0 +1,15 @@
+.PhotographyCardContainer {
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+}
+
+.WritingCardTitle {
+  margin: 0;
+  padding: 0;
+  background-color: #ffac70;
+}

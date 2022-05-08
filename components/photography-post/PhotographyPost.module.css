@@ -1,0 +1,33 @@
+.WritingPostContainer {
+  margin-top: 10vh;
+}
+
+.PostAuthorButton {
+  display: flex;
+  justify-content: space-between;
+}
+
+.TopWrapper {
+  margin: 0 2rem;
+}
+
+.NavigateButton {
+  background-color: #ffac70;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+.PostTitle {
+  padding: 10px;
+  margin: 0;
+}
+
+.GalleryContainer {
+  width: 100%;
+}
+.Image {
+  width: 100%;
+  height: auto;
+}

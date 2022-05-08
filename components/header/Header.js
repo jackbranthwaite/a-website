@@ -20,14 +20,14 @@ const Header = () => {
           <div className={s.MenuLine}></div>
         </div>
         <div className={s.MenuOpen}>
-          <ul className={s.MenuList}>
-            <div className={s.ListItemWrapper}>
-              <li className={s.ListItem}>photography</li>
-            </div>
-            <div className={s.ListItemWrapper}>
-              <li className={s.ListItem}>writing</li>
-            </div>
-          </ul>
+          <div className={s.MenuList}>
+            <Link href={"/photography"} className={s.ListItemWrapper}>
+              <a className={s.ListItem}>photography</a>
+            </Link>
+            <Link href={"/writing"} className={s.ListItemWrapper}>
+              <a className={s.ListItem}>writing</a>
+            </Link>
+          </div>
         </div>
       </div>
     </header>
