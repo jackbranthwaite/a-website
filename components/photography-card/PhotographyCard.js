@@ -3,10 +3,6 @@ import s from "./PhotographyCard.module.css";
 import PropTypes from "prop-types";
 
 const PhotographyCard = ({ content, onClick }) => {
-  useEffect(() => {
-    console.log(content);
-  }, []);
-
   if (!content) return <></>;
   return (
     <div

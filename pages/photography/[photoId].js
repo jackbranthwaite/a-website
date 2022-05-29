@@ -12,7 +12,6 @@ const Reader = () => {
 
   const fetchData = async () => {
     if (photoId) {
-      console.log(photoId);
       return await client
         .getByUID("photography-post", `${photoId}`)
         .then((res) => setPost(res))
@@ -22,12 +21,7 @@ const Reader = () => {
 
   useEffect(() => {
     fetchData();
-    console.log(post);
   }, [photoId]);
-
-  useEffect(() => {
-    console.log(post);
-  }, [post]);
 
   if (!post) {
     return <></>;

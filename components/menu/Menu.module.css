@@ -1,0 +1,30 @@
+.MenuContainer {
+  position: relative;
+}
+.MenuLine {
+  background-color: #000;
+  width: 20px;
+  height: 1px;
+  transition: 0.5s ease-in-out;
+  position: absolute;
+}
+.LineCloseOne {
+  top: 0;
+}
+.LineCloseTwo {
+  top: 4px;
+}
+.LineCloseThree {
+  top: 8px;
+}
+.LineOne {
+  transform: rotate(30deg);
+  top: 4px;
+}
+.LineThree {
+  transform: rotate(-30deg);
+  top: 4px;
+}
+.LineTwo {
+  opacity: 0;
+}

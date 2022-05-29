@@ -14,12 +14,6 @@
   flex-direction: column;
   align-items: flex-end;
 }
-.MenuLine {
-  background-color: #000;
-  width: 20px;
-  height: 1px;
-  margin: 2px;
-}
 
 .MenuList {
   text-align: right;

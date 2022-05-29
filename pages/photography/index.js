@@ -19,9 +19,6 @@ const Photography = () => {
     fetchData();
   }, []);
 
-  useEffect(() => {
-    console.log(post);
-  }, [post]);
   if (!posts) {
     return <></>;
   } else {
