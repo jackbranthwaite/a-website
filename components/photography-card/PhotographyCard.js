@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import s from "./PhotographyCard.module.css";
+import s from "./PhotographyCard.module.scss";
 import PropTypes from "prop-types";
 
 const PhotographyCard = ({ content, onClick }) => {

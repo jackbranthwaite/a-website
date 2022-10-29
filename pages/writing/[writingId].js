@@ -1,9 +1,9 @@
 import { useRouter } from "next/router";
 import React, { useState, useEffect } from "react";
+import { Reader } from "../../components/reader/Reader";
 import { createClient } from "../../prismicio";
-import s from "../../styles/Reader.module.css";
 
-const Reader = () => {
+const ReaderPage = () => {
   const client = createClient();
   const router = useRouter();
   const { writingId } = router.query;
@@ -25,15 +25,8 @@ const Reader = () => {
   if (!post) {
     return <></>;
   } else {
-    return (
-      <div className={s.ReaderContainer}>
-        <div className={s.ReaderWrapper}>
-          <h2>{post.data.title[0].text}</h2>
-          <p>{post.data.content[0].text}</p>
-        </div>
-      </div>
-    );
+    return <Reader data={post.data} />;
   }
 };
 
-export default Reader;
+export default ReaderPage;

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import PropTypes from "prop-types";
-import s from "./PhotographyPost.module.css";
+import s from "./PhotographyPost.module.scss";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";

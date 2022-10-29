@@ -9,7 +9,7 @@
   align-items: center;
 }
 
-.HomepageCard:hover .HomepageCardTitleWrapper {
+/* .HomepageCard:hover .HomepageCardTitleWrapper {
   background-color: #ffac70;
 }
 
@@ -22,4 +22,15 @@
 .HomepageCardTitle {
   margin: 0;
   padding: 0;
+} */
+
+.HomepageCardTitleWrapper {
+  aspect-ratio: 1/1;
+  background-position: center;
+  background-size: cover;
+  object-fit: fill;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

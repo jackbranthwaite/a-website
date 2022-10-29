@@ -1,14 +1,10 @@
 import Header from "../components/header/Header";
-import HomepageCard from "../components/homepage-card/HomepageCard";
-import s from "../styles/Homepage.module.css";
+import { HomepageContainer } from "../components/homepage-container/HomepageContainer";
 
 const Homepage = () => {
   return (
-    <div className={s.Homepage}>
-      <div className={s.HomepageContentContainer}>
-        <HomepageCard title="writing" />
-        <HomepageCard title="photography" />
-      </div>
+    <div>
+      <HomepageContainer />
     </div>
   );
 };

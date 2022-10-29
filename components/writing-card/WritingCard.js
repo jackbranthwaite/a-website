@@ -1,5 +1,5 @@
 import React from "react";
-import s from "./WritingCard.module.css";
+import s from "./WritingCard.module.scss";
 import PropTypes from "prop-types";
 
 const WritingCard = ({ content, onClick }) => {

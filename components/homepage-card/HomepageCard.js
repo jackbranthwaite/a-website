@@ -1,10 +1,12 @@
 import React from "react";
-import s from "./HomepageCard.module.css";
+import s from "./HomepageCard.module.scss";
 import PropTypes from "prop-types";
 
 import BackgroundOne from "../../assets/images/mathias-p-r-reding-reffXHzUiF8-unsplash.jpg";
 import BackgroundTwo from "../../assets/images/matthew-woinarowicz--ZIfQqO1K1o-unsplash.jpg";
 import Link from "next/link";
+import ShapeOne from "../../assets/shapes/orange.png";
+import ShapeTwo from "../../assets/shapes/green.png";
 
 const HomepageCard = ({ title }) => {
   return (
@@ -22,6 +24,7 @@ const HomepageCard = ({ title }) => {
         }
       >
         <div className={s.HomepageCardTitleWrapper}>
+          <div className={s.ShapeWrapper}></div>
           <h2 className={s.HomepageCardTitle}>{title}</h2>
         </div>
       </a>
