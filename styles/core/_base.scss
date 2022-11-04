@@ -38,17 +38,9 @@ img {
 }
 
 :root {
-  --color-yellow: #{$yellow};
-  --color-red: #{$red};
-  --color-blue: #{$blue};
-  --color-grey-dark: #{$grey--dark};
-  --color-grey: #{$grey};
-  --color-grey-light: #{$grey--light};
-  --color-grey-transparent: #{$grey--transparent};
+  --color-yellow: #{$honey--yellow};
   --color-white: #{$white};
-  --color-black: #{$black};
-
-  --font-family: #{$exo};
+  --font-family: #{$poppins};
   // Add additional font families used here
 }
 

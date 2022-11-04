@@ -1,4 +1,4 @@
-import "../styles/globals.css";
+import "../styles/main.scss";
 import { PrismicProvider } from "@prismicio/react";
 import { PrismicPreview } from "@prismicio/next";
 import { linkResolver, repositoryName } from "../prismicio";

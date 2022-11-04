@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+
 // 01. Media Query Breakpoints
 $mobile-portrait-max: 478px;
 $mobile-landscape-max: 767px;
@@ -7,42 +9,27 @@ $xlarge-min: 1440px;
 $xxlarge-min: 1920px;
 
 // 02. Colours
-$yellow: #ffd068;
-$red: #f56d4c;
-$error--orange: #ff9525;
-$blue: #8bd1d0;
-$grey--dark: #2e3649;
-$grey: #485570;
-$grey--light: #9599a2;
-$grey--transparent: rgba(0, 7, 18, 0.6);
+$orange: #ffac70;
 $white: #fff;
-$purple: #4b3086;
-$black: #232323;
-$grey--blue: #334055;
-$grey--inactive: #c1c3d0;
-$blue--deep-primary: #113c6c;
-$blue--deep-secondary: #30659a;
-$blue--tetihi: #009fe3;
-$blue--light: #c5d7ea;
-$orange--brick: #cb665f;
-$orange--burnt: #d58458;
-$orange--brick-light: rgba(240, 206, 186, 0.5);
-$green--development: #006c31;
-$yellow--development: #e2ac00;
-$orange--development: #e86209;
-$red--development: #ab1111;
-$blue--development: #1c5982;
+$green: #78bc61;
+$salmon: #e9806e;
+$dark--khaki: #c0c781;
+$orange--red: #f26419;
+$honey--yellow: #f6ae2d;
+$tufts--blue: #3c91e6;
+$mango--tango: #fa824c;
+$black: #000;
 
-$body-background-color: $white;
-$default-font-color: $grey;
-$default-hover-color: $grey--dark;
+$body-background-color: $orange;
+$default-font-color: $black;
+$default-hover-color: $orange--red;
 
 // 03. Type
-$exo: 'Exo', Helvetica, Arial, sans-serif;
-$body-font-family: $exo;
+$poppins: "Poppins", Helvetica Neue, sans-serif;
+$body-font-family: $poppins;
 $default-font-family: $body-font-family;
 $font-family: $body-font-family;
-$heading-font-family: $exo;
+$heading-font-family: $poppins;
 
 // 04. Grid
 $grid-columns: 12;
