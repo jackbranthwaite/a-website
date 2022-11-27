@@ -4,7 +4,7 @@ import s from "./PhotographyPost.module.scss";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
-import { Navigation } from "swiper";
+import { Navigation, EffectFade } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Left from "../../assets/svg/icons/chevron-left.svg";
 import Right from "../../assets/svg/icons/chevron-right.svg";
@@ -45,11 +45,13 @@ const PhotographyPost = ({ content }) => {
         </div>
         <Swiper
           slidesPerView={1}
-          modules={[Navigation]}
+          modules={[Navigation, EffectFade]}
+          effect={"fade"}
           navigation={{
             prevEl: navigationLeft.current,
             nextEl: navigationRight.current,
           }}
+          fadeEffect={{ crossFade: true }}
         >
           {content.data.body[0].items.map((item, i) => {
             return (
