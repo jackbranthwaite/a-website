@@ -1,13 +1,20 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 import s from "./PhotographyPost.module.scss";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
+import { Navigation } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import Left from "../../assets/svg/icons/chevron-left.svg";
+import Right from "../../assets/svg/icons/chevron-right.svg";
 
 const PhotographyPost = ({ content }) => {
   const date = new Date(content.last_publication_date).toDateString();
   const router = useRouter();
+
+  const navigationRight = useRef(null);
+  const navigationLeft = useRef(null);
 
   if (!content) return <></>;
   return (
@@ -19,6 +26,7 @@ const PhotographyPost = ({ content }) => {
             <p className={s.PostDate}>{date}</p>
             <p className={s.PostAuthor}>{content.data.author[0].text}</p>
           </div>
+
           <Link href={`/photography/${content.uid}`}>
             <a
               className={s.NavigateButton}
@@ -30,17 +38,35 @@ const PhotographyPost = ({ content }) => {
           </Link>
         </div>
       </div>
+
       <div className={s.GalleryContainer}>
-        {content.data.body[0].items.map((item, i) => {
-          return (
-            <img
-              className={s.Image}
-              src={item.image.url}
-              key={i}
-              alt={item.image.alt}
-            />
-          );
-        })}
+        <div className={s.LeftChevron} ref={navigationLeft}>
+          <Left height={25} width={25} />
+        </div>
+        <Swiper
+          slidesPerView={1}
+          modules={[Navigation]}
+          navigation={{
+            prevEl: navigationLeft.current,
+            nextEl: navigationRight.current,
+          }}
+        >
+          {content.data.body[0].items.map((item, i) => {
+            return (
+              <SwiperSlide key={i}>
+                {/* eslint --ignore-pattern @next/next/no-img-element */}
+                <img
+                  className={s.Image}
+                  src={item.image.url}
+                  alt={item.image.alt}
+                />
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+        <div className={s.RightChevron} ref={navigationRight}>
+          <Right height={25} width={25} />
+        </div>
       </div>
     </div>
   );

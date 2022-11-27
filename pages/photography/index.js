@@ -18,8 +18,6 @@ const PhotographyPage = () => {
     fetchData();
   }, []);
 
-  console.log(posts);
-
   if (!posts) {
     return <></>;
   } else {

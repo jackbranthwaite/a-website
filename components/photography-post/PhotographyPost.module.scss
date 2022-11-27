@@ -26,8 +26,33 @@
 
 .GalleryContainer {
   width: 100%;
+  display: flex;
+  margin-top: 2rem;
+  position: relative;
 }
 .Image {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 60vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.LeftChevron {
+  position: absolute;
+  top: 30vh;
+  left: 70px;
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  z-index: 10;
+}
+
+.RightChevron {
+  top: 30vh;
+  right: 70px;
+  position: absolute;
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  z-index: 10;
 }
