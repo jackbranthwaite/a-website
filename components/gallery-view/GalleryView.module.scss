@@ -17,9 +17,12 @@
   width: 90vw;
   margin-left: auto;
   margin-right: auto;
+  columns: 6 30vw;
+  column-gap: 2rem;
 }
 
 .Image {
   width: 100%;
   height: auto;
+  margin-bottom: 2rem;
 }
