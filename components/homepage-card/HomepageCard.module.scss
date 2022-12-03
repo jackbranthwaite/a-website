@@ -7,30 +7,28 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-/* .HomepageCard:hover .HomepageCardTitleWrapper {
-  background-color: #ffac70;
+  :hover {
+    .Image {
+      opacity: 1;
+      transition: all ease-in-out 0.5s;
+    }
+  }
 }
 
 .HomepageCardTitleWrapper {
-  width: 35%;
-  transition: 0.5s ease-in-out;
-  padding: 0 5px;
-}
-
-.HomepageCardTitle {
-  margin: 0;
-  padding: 0;
-} */
-
-.HomepageCardTitleWrapper {
-  aspect-ratio: 1/1;
-  background-position: center;
-  background-size: cover;
-  object-fit: fill;
-  padding: 50px;
+  // padding: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.Image {
+  opacity: 0;
+  transition: all ease-in-out 0.5s;
+}
+
+.HomepageCardTitle {
+  z-index: 3;
+  position: absolute;
 }
