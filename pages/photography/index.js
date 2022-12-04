@@ -10,7 +10,6 @@ const PhotographyPage = () => {
 
   const fetchData = async () => {
     const res = await client.getAllByType("photography-post");
-
     setPosts(res);
   };
 

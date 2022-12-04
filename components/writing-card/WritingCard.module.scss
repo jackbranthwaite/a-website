@@ -1,9 +1,11 @@
+@import "~/styles/config";
+
 .WritingCardContainer {
   width: 100%;
   padding: 20px;
-  background-color: #ffac70;
+  background-color: $salmon;
   overflow: hidden;
-  border-top: 1px solid #ffbf91;
+  border-top: 1px solid $salmon;
   cursor: pointer;
 }
 

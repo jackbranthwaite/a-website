@@ -1,9 +1,8 @@
+@import "~/styles/config";
+
 .WritingContainer {
   display: flex;
-}
-
-.WritingTitleContainer {
-  background-color: #ffac70;
+  background-color: $salmon;
 }
 
 .WritingLeftContainer {
