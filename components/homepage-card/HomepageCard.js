@@ -4,8 +4,8 @@ import PropTypes from "prop-types";
 import BackgroundOne from "../../assets/images/mathias-p-r-reding-reffXHzUiF8-unsplash.jpg";
 import BackgroundTwo from "../../assets/images/matthew-woinarowicz--ZIfQqO1K1o-unsplash.jpg";
 import Link from "next/link";
-import ShapeOne from "../../assets/shapes/orange.png";
-import ShapeTwo from "../../assets/shapes/green.png";
+import Sharp from "../../assets/svg/shapes/sharp.svg";
+import Four from "../../assets/svg/shapes/four.svg";
 
 const HomepageCard = ({ title }) => {
   return (
@@ -24,10 +24,21 @@ const HomepageCard = ({ title }) => {
       >
         <div className={s.HomepageCardTitleWrapper}>
           <div className={s.ShapeWrapper}>
-            <img
-              src={title === "writing" ? ShapeOne.src : ShapeTwo.src}
-              className={s.Image}
-            />
+            {title === "writing" ? (
+              <Sharp
+                height={300}
+                width={300}
+                className={s.Image}
+                fill={"#e9806e"}
+              />
+            ) : (
+              <Four
+                height={300}
+                width={300}
+                className={s.Image}
+                fill={"#78bc61"}
+              />
+            )}
           </div>
           <h2 className={s.HomepageCardTitle}>{title}</h2>
         </div>

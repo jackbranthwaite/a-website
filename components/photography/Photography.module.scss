@@ -1,9 +1,12 @@
+@import "~/styles/config";
+
 .PhotographyContainer {
   display: flex;
+  background-color: $green;
 }
 
 .PhotographyTitleContainer {
-  background-color: #ffac70;
+  background-color: $green;
 }
 
 .PhotographyLeft {
@@ -17,7 +20,7 @@
 .PhotographyRight {
   width: 70vw;
   height: 100vh;
-  background-color: #fff;
+  background-color: $green;
   overflow-y: scroll;
 }
 

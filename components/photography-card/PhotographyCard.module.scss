@@ -1,3 +1,5 @@
+@import "~/styles/config";
+
 .PhotographyCardContainer {
   width: 100%;
   overflow: hidden;
@@ -11,5 +13,5 @@
 .WritingCardTitle {
   margin: 0;
   padding: 0;
-  background-color: #ffac70;
+  background-color: $green;
 }
